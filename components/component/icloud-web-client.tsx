@@ -12,8 +12,9 @@ export default function ICloudWebClient() {
     <div className="bg-[#007aff] min-h-screen p-10 flex justify-center items-center">
       <div className="flex justify-between items-start max-w-4xl w-full gap-10 px-10">
         <div className="space-y-6 w-3/5">
-          <div className="bg-white rounded-lg p-4 shadow-lg transform transition-transform duration-200 hover:scale-105">
+          <div className="bg-white rounded-lg p-4 shadow-lg interactive">
             <div className="flex items-center space-x-4">
+                <Image alt="pfp" src="/vz.png" className="rounded-full interactive" width="50" height="50" />
               <div>
                 <div className="text-lg font-semibold">John Doe</div>
                 <div className="text-sm text-gray-500">johndoe@example.com</div>
@@ -21,7 +22,7 @@ export default function ICloudWebClient() {
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-lg p-4 shadow-lg transform transition-transform duration-200 hover:scale-105">
+          <div className="bg-white rounded-lg p-4 shadow-lg interactive">
             <div className="flex justify-between items-center">
               <div className="text-lg font-semibold">Drive</div>
               <HistoryIcon className="text-blue-500" />
@@ -44,7 +45,7 @@ export default function ICloudWebClient() {
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-lg p-4 shadow-lg transform transition-transform duration-200 hover:scale-105">
+          <div className="bg-white rounded-lg p-4 shadow-lg interactive">
             <div className="flex justify-between items-center">
               <div className="text-lg font-semibold">Notes</div>
               <CloudIcon className="text-blue-500" />
@@ -59,19 +60,19 @@ export default function ICloudWebClient() {
           </div>
         </div>
         <div className="space-y-6 w-2/5">
-          <div className="bg-white rounded-lg p-4 shadow-lg transform transition-transform duration-200 hover:scale-105">
-            <div className="flex justify-between items-center">
+          <div className="flex flex-col gap-6 bg-white rounded-lg p-4 shadow-lg interactive">
+            <div className="flex justify-between">
+              <div className="text-lg font-semibold">Mail</div>
               <MailIcon className="text-blue-500" />
+            </div>
+            <div className="flex justify-between">
+              <div className="text-sm text-gray-500">Private, secure and personal email</div>
               <Button className="text-sm" variant="outline">
                 Configure
               </Button>
             </div>
-            <div className="mt-2">
-              <div className="text-lg font-semibold">Set up iCloud Mail</div>
-              <div className="text-sm text-gray-500">Private, secure and personal email from Apple.</div>
-            </div>
           </div>
-          <div className="bg-white rounded-lg p-4 shadow-lg transform transition-transform duration-200 hover:scale-105">
+          <div className="bg-white rounded-lg p-4 shadow-lg interactive">
             <div className="flex justify-between items-center">
               <div className="text-lg font-semibold">Photos</div>
               <CameraIcon className="text-blue-500" />
@@ -79,9 +80,9 @@ export default function ICloudWebClient() {
             <div className="mt-2 grid grid-cols-3 gap-2">
               <Image
                 alt="Photo 1"
-                className="w-full h-auto rounded-md"
+                className="w-full h-auto rounded-md interactive"
                 height="60"
-                src="/placeholder.svg"
+                src="/vz.png"
                 style={{
                   aspectRatio: "60/60",
                   objectFit: "cover",
@@ -90,9 +91,9 @@ export default function ICloudWebClient() {
               />
               <Image
                 alt="Photo 2"
-                className="w-full h-auto rounded-md"
+                className="w-full h-auto rounded-md interactive"
                 height="60"
-                src="/placeholder.svg"
+                src="/vz.png"
                 style={{
                   aspectRatio: "60/60",
                   objectFit: "cover",
@@ -101,9 +102,9 @@ export default function ICloudWebClient() {
               />
               <Image
                 alt="Photo 3"
-                className="w-full h-auto rounded-md"
+                className="w-full h-auto rounded-md interactive"
                 height="60"
-                src="/placeholder.svg"
+                src="/vz.png"
                 style={{
                   aspectRatio: "60/60",
                   objectFit: "cover",
@@ -112,7 +113,7 @@ export default function ICloudWebClient() {
               />
             </div>
           </div>
-          <div className="bg-white rounded-lg p-4 shadow-lg transform transition-transform duration-200 hover:scale-105">
+          <div className="bg-white rounded-lg p-4 shadow-lg interactive">
             <div className="flex justify-between items-center">
               <div className="text-lg font-semibold">Reminders</div>
               <BellIcon className="text-blue-500" />
